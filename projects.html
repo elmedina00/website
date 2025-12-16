@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Architecture Studio Projects</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #2d2828e1;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: #856eee00;
+            color: rgb(255, 255, 255);
+            padding: 15px 20px;
+            text-align: left;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+        }
+
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        header {
+            background-image: url('white.jpg');
+            background-size: cover;
+            background-position: center;
+            color: rgb(99, 99, 56);
+            padding: 120px 100px;
+            text-align: center;
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            margin-top: 60px; /* to prevent overlap with nav */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 4.5rem;
+            text-shadow: 10px 15px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        header p {
+            font-size: 2rem;
+            margin-top: 10px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            background-color: #ffffff;
+        }
+
+        .project img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project:hover img {
+            transform: scale(1.1);
+        }
+
+        .project-info {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+            color: #ffffff;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .project:hover .project-info {
+            opacity: 1;
+        }
+
+        .project-info h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #7388e7;
+        }
+
+        .project-info p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #166007c9;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2a20acc2;
+        }
+ .contact {
+            padding: 5rem 2rem;
+            background-color: white;
+            text-align: center;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background-color: #e94560;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background-color: #c2334d;
+        }
+        footer {
+            background-color: #333333a2;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 1rem;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #9e5e2d;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Our Architecture Studio</h1>
+        <p>Innovative Designs and Exceptional Projects</p>
+    </header>
+
+    <!-- Main Section with Projects -->
+    <section>
+        <h2>Our Latest Architectural Projects</h2>
+        <div class="project-container">
+            <!-- Project 1 -->
+            <div class="project">
+                <img src="mediUni.png" alt="MedicUni">
+                <div class="project-info">
+                    <h3>MedicUni Hospital</h3>
+                    <p>This innovative hospital design incorporates modern technology and expansive galleries, creating a dynamic space that inspires healing and innovation.</p>
+                    <a href="medicuni.html" class="btn">View Details</a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project">
+                <img src="15 Villa hospitality.png" alt="15 Villa hospitality">
+                <div class="project-info">
+                    <h3>15 Villa Hospitality</h3>
+                    <p>We specialize in creating eco-friendly structures that prioritize sustainability. This green building integrates solar panels and natural materials.</p>
+                    <a href="15villa.html" class="btn">View Details</a>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project">
+                <img src="kindergarten.png" alt="New Generation Kindergarten">
+                <div class="project-info">
+                    <h3>New Generation Kindergarten</h3>
+                    <p>This playful yet functional design integrates natural light and vibrant colors to create an engaging learning environment for young children.</p>
+                    <a href="kindergarten.html" class="btn">View Details</a>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="project">
+                <img src="max.png" alt="Maxima City Sports Hall">
+                <div class="project-info">
+                    <h3>Maxima City Sports Hall</h3>
+                    <p>A state-of-the-art sports facility with a focus on community engagement and world-class infrastructure for sporting events and leisure activities.</p>
+                    <a href="maxima.html" class="btn">View Details</a>
+                </div>
+            </div>
+            
+            <!-- Project 5 -->
+            <div class="project">
+                <img src="novam vitam edirne.png" alt="Novam Vitam Edirne">
+                <div class="project-info">
+                    <h3>Novam Vitam Edirne</h3>
+                    <p>This revitalized urban space provides a serene park for the community, blending nature with the urban landscape to foster a sense of peace and wellbeing.</p>
+                    <a href="novam.html" class="btn">View Details</a>
+                </div>
+                 <!-- Project 5 -->
+            <div class="project">
+                <img src="novam vitam edirne.png" alt="Novam Vitam Edirne">
+                <div class="project-info">
+                    <h3>Novam Vitam Edirne</h3>
+                    <p>This revitalized urban space provides a serene park for the community, blending nature with the urban landscape to foster a sense of peace and wellbeing.</p>
+                    <a href="novam.html" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Our Architecture Studio. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
