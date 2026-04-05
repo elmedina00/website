@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RAILUX WEBSITE</title>
+<title>RAILUX ARCHITECTURE STUDIO</title>
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +52,7 @@
     .nav-links ul li a {
         color: #ff8383;
         text-decoration: none;
-        font-size: 18px; /* ZMADHUAR */
+        font-size: 18px;
         font-weight: 600;
     }
 
@@ -81,7 +81,7 @@
     } 
 
     .text-box h1 {
-        font-size: 85px; /* ZMADHUAR */
+        font-size: 85px;
         text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
         letter-spacing: 3px;
         margin-bottom: 30px;
@@ -95,7 +95,7 @@
 
     .text-box p {
         margin: 20px 0 50px;
-        font-size: 24px; /* ZMADHUAR */
+        font-size: 24px;
         color: #a1e0cd;
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
         line-height: 1.8;
@@ -107,8 +107,8 @@
         text-decoration: none;
         color: #ffffff;
         border: 2px solid #ff0101;
-        padding: 18px 45px; /* ZMADHUAR */
-        font-size: 18px; /* ZMADHUAR */
+        padding: 18px 45px;
+        font-size: 18px;
         background: transparent;
         position: relative;
         cursor: pointer;
@@ -133,11 +133,11 @@
 
     @media(max-width: 700px) {
         .text-box h1 {
-            font-size: 48px; /* ZMADHUAR */
+            font-size: 48px;
         }
         
         .text-box p {
-            font-size: 18px; /* ZMADHUAR */
+            font-size: 18px;
         }
         
         .nav-links ul li a {
@@ -145,7 +145,6 @@
         }
     }
 
-    /* mobile menu */
     @media(max-width: 700px) {
         .nav-links ul li {
             display: block;
@@ -167,7 +166,7 @@
             display: block;
             color: #e60808;
             margin: 10px;
-            font-size: 26px; /* ZMADHUAR */
+            font-size: 26px;
             cursor: pointer;
         }
 
@@ -176,16 +175,18 @@
         }
     }
 
-    /* ----- COURSE ----- */
+    /* ----- SERVICES ----- */
     .course {
         width: 80%;
         margin:auto;
         text-align: center;
-        padding-top:120px; /* ZMADHUAR */
+        padding-top:120px;
+        background-color: #0b111b;
+        padding-bottom: 50px;
     }
 
     .course h1 {
-        font-size: 48px; /* ZMADHUAR */
+        font-size: 48px;
         font-weight: 700;
         margin-bottom: 20px;
         color: #ffffff;
@@ -193,7 +194,7 @@
 
     .course p {
         color:#ffffff;
-        font-size: 20px; /* ZMADHUAR */
+        font-size: 20px;
         font-weight: 400;
         line-height: 1.8;
         padding: 15px;
@@ -212,7 +213,7 @@
         background: #193552fb;
         border-radius: 15px;
         margin-bottom: 5%;
-        padding: 30px 20px; /* ZMADHUAR */
+        padding: 30px 20px;
         box-sizing: border-box;
         transition: 0.5s;
     }
@@ -222,12 +223,12 @@
         font-weight: 700;
         margin: 15px 0;
         color: #fff;
-        font-size: 28px; /* ZMADHUAR */
+        font-size: 28px;
     }
 
     .course-col p {
         color:#ffffff;
-        font-size: 18px; /* ZMADHUAR */
+        font-size: 18px;
         font-weight: 400;
         line-height: 1.7;
         padding: 10px;
@@ -242,26 +243,23 @@
         .row {
             flex-direction: column;
         }
-        
-        .course h1 {
-            font-size: 36px;
-        }
-        
-        .course-col h3 {
-            font-size: 24px;
-        }
     }
 
-    /*----- CAMPUS -----*/
+    /*----- CAMPUS / PORTFOLIO -----*/
     .campus {
-        width:85%;
-        margin: auto;
+        width:100%;
+        background: #0b111b;
         text-align: center;
-        padding-top: 80px; /* ZMADHUAR */
+        padding-top: 80px;
+    }
+
+    .campus-content {
+        width: 85%;
+        margin: auto;
     }
 
     .campus h1 {
-        font-size: 48px; /* ZMADHUAR */
+        font-size: 48px;
         font-weight: 700;
         margin-bottom: 20px;
         color: #ffffff;
@@ -269,7 +267,7 @@
 
     .campus p {
         color:#ffffff;
-        font-size: 20px; /* ZMADHUAR */
+        font-size: 20px;
         font-weight: 400;
         line-height: 1.8;
         margin-bottom: 40px;
@@ -308,7 +306,7 @@
 
     .layer h3 {
         color: #fff;
-        font-size: 32px; /* ZMADHUAR */
+        font-size: 32px;
         opacity: 0;
         transition: 0.5s;
         background: rgba(0, 0, 0, 0.7);
@@ -327,14 +325,19 @@
 
     /*----- FACILITIES -----*/
     .facilities {
+        width: 100%;
+        background: #0b111b;
+        text-align: center;
+        padding: 120px 0;
+    }
+    
+    .facilities-content {
         width: 85%;
         margin: auto;
-        text-align: center;
-        padding: 120px 0; /* ZMADHUAR */
     }
-  
+
     .facilities h1 {
-        font-size: 48px; /* ZMADHUAR */
+        font-size: 48px;
         font-weight: 700;
         margin-bottom: 20px;
         color: #ffffff;
@@ -342,7 +345,7 @@
     
     .facilities p {
         color:#ffffff;
-        font-size: 20px; /* ZMADHUAR */
+        font-size: 20px;
         font-weight: 400;
         line-height: 1.8;
         margin-bottom: 50px;
@@ -361,7 +364,7 @@
         margin-bottom: 5%;
         position: relative;
         overflow: hidden;
-        height: 400px; /* ZMADHUAR */
+        height: 400px;
         box-shadow: 0 12px 35px rgba(0,0,0,0.4);
         transition: all 0.5s ease;
     }
@@ -382,19 +385,12 @@
         transition: transform 0.5s;
     }
     
-    .facilities-col:hover .facility-bg {
-        transform: scale(1.1);
-    }
-    
     .facility-overlay {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(135deg, 
-            rgba(120, 14, 32, 0.85) 0%, 
-            rgba(26, 26, 46, 0.9) 100%);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -405,7 +401,7 @@
     }
     
     .facility-content h3 {
-        font-size: 36px; /* ZMADHUAR */
+        font-size: 36px;
         margin-bottom: 25px;
         font-weight: 800;
         color: white;
@@ -415,7 +411,7 @@
     }
     
     .facility-content p {
-        font-size: 22px; /* ZMADHUAR */
+        font-size: 22px;
         line-height: 1.8;
         color: white;
         font-weight: 500;
@@ -423,34 +419,25 @@
     }
     
     /* Ngjyra te ndryshme per secilen karte */
-    .facilities-col:nth-child(1) .facility-overlay {
-        background: linear-gradient(135deg, 
-            rgba(26, 20, 13, 0.416) 0%, 
-            rgba(14, 9, 0, 0.9) 100%);
-    }
-    
-    .facilities-col:nth-child(2) .facility-overlay {
-        background: linear-gradient(135deg, 
-            rgba(7, 8, 10, 0.53) 0%, 
-            rgba(0, 0, 0, 0) 100%);
-    }
-    
-    .facilities-col:nth-child(3) .facility-overlay {
-        background: linear-gradient(135deg, 
-            rgba(2, 5, 10, 0.676) 0%, 
-            rgba(0, 0, 0, 0.9) 100%);
-    }
+    .facilities-col:nth-child(1) .facility-overlay { background: rgba(0,0,0,0.5); }
+    .facilities-col:nth-child(2) .facility-overlay { background: rgba(0,0,0,0.5); }
+    .facilities-col:nth-child(3) .facility-overlay { background: rgba(0,0,0,0.5); }
 
     /*---- TESTIMONIALS ----*/
     .testimonials{
+        width: 100%;
+        background: #0b111b;
+        text-align: center;
+        padding: 120px 0;
+    }
+
+    .testi-content {
         width: 85%;
         margin: auto;
-        text-align: center;
-        padding: 120px 0; /* ZMADHUAR */
     }
 
     .testimonials h1{
-        font-size: 48px; /* ZMADHUAR */
+        font-size: 48px;
         font-weight: 700;
         margin-bottom: 25px;
         color: #ffffff;
@@ -458,7 +445,7 @@
 
     .testimonials p{
         color: #ffffff;
-        font-size: 20px; /* ZMADHUAR */
+        font-size: 20px;
         font-weight: 400;
         margin-bottom: 50px;
         line-height: 1.8;
@@ -476,21 +463,16 @@
         margin-bottom: 5%;
         text-align: left;
         background: #fff3f3;
-        padding: 35px; /* ZMADHUAR */
+        padding: 35px;
         cursor: pointer;
         display: flex;
         align-items: flex-start;
         transition: all 0.3s ease;
     }
 
-    .testimonial-col:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-    }
-
     .testimonial-col img{
-        height: 70px; /* ZMADHUAR */
-        width: 70px; /* ZMADHUAR */
+        height: 70px;
+        width: 70px;
         margin-right: 25px;
         border-radius: 50%;
     }
@@ -498,7 +480,7 @@
     .testimonial-col p{
         padding: 0;
         color: #333;
-        font-size: 18px; /* ZMADHUAR */
+        font-size: 18px;
         line-height: 1.7;
     }
 
@@ -506,101 +488,55 @@
         margin-top: 20px;
         font-weight: 700;
         color: #000;
-        font-size: 22px; /* ZMADHUAR */
+        font-size: 22px;
     }
 
     .testimonial-col .fa{
         color:#ff3122;
-        font-size: 18px; /* ZMADHUAR */
-        margin-right: 2px;
-    }
-    
-    @media(max-width:700px){
-        .testimonial-col img{
-            margin-left: 0px;
-            margin-right: 15px;
-        }
-        .testimonial-row {
-            flex-direction: column;
-        }
-        
-        .testimonials h1 {
-            font-size: 36px;
-        }
     }
 
     /*---- CALL TO ACTION ----*/
     .cta{
-        margin:120px auto;
-        width:85%;
+        margin:0 auto;
+        width:100%;
         background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(wallapeperfq1.jpg);
         background-position: center;
         background-size: cover;
-        border-radius: 15px;
         text-align: center;
-        padding: 120px 0; /* ZMADHUAR */
+        padding: 120px 0;
     }
 
     .cta h1{
         color:#fff;
         margin-bottom: 50px;
-        padding: 0;
-        font-size: 42px; /* ZMADHUAR */
-        text-shadow: 3px 3px 8px rgba(0,0,0,0.6);
+        font-size: 42px;
         font-weight: 700;
-        line-height: 1.3;
     }
 
     .cta a{
         text-decoration: none;
         color:#ffffff;
         background:#f44336;
-        padding:18px 45px; /* ZMADHUAR */
+        padding:18px 45px;
         border-radius: 8px;
-        transition:0.3s;
-        font-size: 18px; /* ZMADHUAR */
+        font-size: 18px;
         text-transform: uppercase;
-        letter-spacing: 2px;
         font-weight: 700;
-        box-shadow: 0 8px 20px rgba(244, 67, 54, 0.4);
-    }
-
-    .cta a:hover{
-        background:#b82c21;
-        transform: translateY(-5px);
-        box-shadow: 0 12px 25px rgba(244, 67, 54, 0.6);
-    }
-    
-    @media(max-width: 700px){
-        .cta h1{
-            font-size: 32px;
-        }
     }
 
     /* Stilet për contact section */
     .contact {
-        padding: 100px 0; /* ZMADHUAR */
+        padding: 100px 0;
         background-color: #f5f5f5;
         text-align: center;
     }
     
     .section-title {
-        font-size: 42px; /* ZMADHUAR */
+        font-size: 42px;
         color: #2c3e50;
         margin-bottom: 60px;
         position: relative;
         font-weight: 700;
-    }
-    
-    .section-title::after {
-        content: '';
-        position: absolute;
-        width: 80px;
-        height: 4px;
-        background: #f39c12;
-        bottom: -15px;
-        left: 50%;
-        transform: translateX(-50%);
     }
     
     .contact-form {
@@ -613,133 +549,48 @@
         margin-bottom: 30px;
     }
     
-    .form-group label {
-        display: block;
-        margin-bottom: 12px;
-        font-weight: 600;
-        color: #395067;
-        font-size: 18px; /* ZMADHUAR */
-    }
-    
-    .form-group input,
-    .form-group textarea {
+    .form-group input, .form-group textarea {
         width: 100%;
-        padding: 16px; /* ZMADHUAR */
+        padding: 16px;
         border: 2px solid #ddd;
         border-radius: 8px;
-        font-size: 18px; /* ZMADHUAR */
-        transition: border-color 0.3s;
-    }
-    
-    .form-group input:focus,
-    .form-group textarea:focus {
-        outline: none;
-        border-color: #f39c12;
-    }
-    
-    .form-group textarea {
-        height: 180px; /* ZMADHUAR */
-        resize: vertical;
+        font-size: 18px;
     }
     
     .submit-btn {
         background-color: #f39c12;
         color: white;
-        border: none;
-        padding: 16px 35px; /* ZMADHUAR */
+        padding: 16px 35px;
         border-radius: 8px;
-        font-size: 18px; /* ZMADHUAR */
+        font-size: 18px;
         cursor: pointer;
-        transition: background-color 0.3s;
         width: 100%;
         font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-    
-    .submit-btn:hover {
-        background-color: #e67e22;
     }
 
     /*------- FOOTER ------*/
     .footer{
         width: 100%;
         text-align: center;
-        padding: 40px 0; /* ZMADHUAR */
+        padding: 40px 0;
         background: #2a333d;
     }
     
     .footer h4{
         margin-bottom: 30px;
-        margin-top: 25px;
-        font-weight: 700;
         color: #ffffff;
-        font-size: 32px; /* ZMADHUAR */
+        font-size: 32px;
     }
     
     .footer p{
         color: #d1e7ff;
-        font-size: 18px; /* ZMADHUAR */
-        line-height: 1.8;
-        margin-bottom: 25px;
-    }
-    
-    .icons {
-        margin: 25px 0;
+        font-size: 18px;
     }
     
     .icons .fa{
         color:#f44336;
         margin:0 15px;
-        cursor: pointer;
-        padding:20px 0;
-        transition: all 0.3s ease;
-        font-size: 24px; /* ZMADHUAR */
-    }
-    
-    .icons .fa:hover {
-        transform: translateY(-8px);
-        color: #ff8383;
-    }
-    
-    .footer p:last-child {
-        font-size: 20px; /* ZMADHUAR */
-        font-weight: 600;
-        margin-top: 20px;
-    }
-    
-    .footer .fa-star {
-        color: #ffd700;
-        font-size: 20px; /* ZMADHUAR */
-        margin: 0 5px;
-    }
-
-    /* Responsive design */
-    @media (max-width: 768px) {
-        .facilities-row {
-            flex-direction: column;
-        }
-        
-        .facilities-col {
-            flex-basis: 100%;
-            margin-bottom: 35px;
-        }
-        
-        .facility-content h3 {
-            font-size: 28px;
-        }
-        
-        .facility-content p {
-            font-size: 18px;
-        }
-        
-        .testimonial-row {
-            flex-direction: column;
-        }
-        
-        .section-title {
-            font-size: 32px;
-        }
+        font-size: 24px;
     }
 </style>
 </head>
@@ -752,202 +603,180 @@
         <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="index.html" class="home-link">Home</a></li>
-                <li><a href="interior design.html" class="interior-link">Interior Designs</a></li>
-                <li><a href="projects.html" class="projects-link">Projects</a></li>
-                <li><a href="#blog" class="blog-link">Blog</a></li>
-                <li><a href="#contact" class="contact-link">Contact</a></li>
+                <li><a href="index.html">KREU</a></li>
+                <li><a href="interior design.html">DIZAJN I BRENDSHËM</a></li>
+                <li><a href="projects.html">PROJEKTE</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#contact">KONTAKT</a></li>
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>  
 
     <div class="text-box">
-        <h1>Welcome to RAILUX</h1>
-        <p>Design - Space - Vision<br>
-  An architecture studio website where ideas take shape, lines become structures,<br>
-   & creativity meets purpose. <br>
+        <h1>MIRËSEVINI NË RAILUX</h1>
+        <p>Projektim - Hapësirë - Vizion<br>
+        Një studio arkitekture ku idetë marrin formë dhe kreativiteti takon funksionalitetin.
         </p>
-        <a href="railux.html" class="hero-btn">Visit Us To know More</a>
+        <a href="#contact" class="hero-btn">KONSULTOHU ME NE</a>
     </div>
 </section>
 
-<!-----Course---->
 <section class="course">
-    <h1>Courses we offer</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis excepturi modi aut saepe corrupti.</p>
+    <h1>SHËRBIMET TONA</h1>
+    <p>Ne ofrojmë zgjidhje të plota arkitekturore për çdo lloj hapësire dhe kërkese.</p>
 
     <div class="row">
         <div class="course-col">
-            <h3>INFOOORMAICONE</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <h3>PROJEKTIM BIM</h3>
+            <p>Përdorimi i teknologjisë BIM për projektim të saktë 3D, duke optimizuar çdo detaj ndërtimor.</p>
         </div> 
 
         <div class="course-col">
-            <h3>PROJECTS</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <h3>DIZAJN INTERIOR</h3>
+            <p>Krijimi i hapësirave të brendshme unike që kombinojnë estetikën moderne me komoditetin maksimal.</p>
         </div> 
     
         <div class="course-col">
-            <h3>Interior Design (LONDON)</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <h3>MENAXHIM PROJEKTI</h3>
+            <p>Ndjekja e punimeve nga koncepti fillestar deri në dorëzimin e çelësave të objektit.</p>
         </div> 
     </div>
 </section>
 
-<!-----campus---->
 <section class="campus">
-    <h1> OUR GLOBAL CAMPUS </h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    <div class="campus-content">
+        <h1>PORTFOLIO JONË</h1>
+        <p>Eksploroni disa nga punët tona më të fundit në arkitekturë dhe dizajn.</p>
 
-    <div class="row">
-        <div class="campus-col">
-            <img src="WhatsApp Image 2025-04-11 at 18.42.15_0e419c0c.jpg" alt="dinnig room">
-            <div class="layer">
-                <h3>Dinning room</h3>
+        <div class="row">
+            <div class="campus-col">
+                <img src="WhatsApp Image 2025-04-11 at 18.42.15_0e419c0c.jpg" alt="dinnig room">
+                <div class="layer">
+                    <h3>AMBJENTE NDENJE</h3>
+                </div>
             </div>
-        </div>
-         <div class="campus-col">
-            <img src="WhatsApp Image 2025-04-11 at 18.42.15_74136fe3.jpg" alt="bedroom">
-            <div class="layer">
-                <h3>BEDROOM</h3>
+             <div class="campus-col">
+                <img src="WhatsApp Image 2025-04-11 at 18.42.15_74136fe3.jpg" alt="bedroom">
+                <div class="layer">
+                    <h3>DHOMA GJUMI</h3>
+                </div>
             </div>
-        </div>
-         <div class="campus-col">
-            <img src="WhatsApp Image 2025-04-11 at 18.41.13_fd40b39c.jpg" alt="Living room">
-            <div class="layer">
-                <h3>Living room</h3>
+             <div class="campus-col">
+                <img src="WhatsApp Image 2025-04-11 at 18.41.13_fd40b39c.jpg" alt="Living room">
+                <div class="layer">
+                    <h3>PROJEKTE MODERNE</h3>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-----facilities---->
 <section class="facilities">
-    <h1>Our Facilities</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="facilities-content">
+        <h1>EKSPERTIZA JONË</h1>
+        <p>Specializuar në projekte rezidenciale, komerciale dhe mjekësore.</p>
 
-    <div class="facilities-row">
-        <div class="facilities-col">
-            <div class="facility-bg" style="background-image: url('WhatsApp Image 2025-04-11 at 18.42.15_74136fe3.jpg')"></div>
-            <div class="facility-overlay">
-                <div class="facility-content">
-                    <h3>RESIDENCE</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+        <div class="facilities-row">
+            <div class="facilities-col">
+                <div class="facility-bg" style="background-image: url('WhatsApp Image 2025-04-11 at 18.42.15_74136fe3.jpg')"></div>
+                <div class="facility-overlay">
+                    <div class="facility-content">
+                        <h3>REZIDENCIALE</h3>
+                        <p>Vila dhe apartamente të projektuara për një jetesë luksoze dhe komode.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="facilities-col">
-            <div class="facility-bg" style="background-image: url('mediUni.png')"></div>
-            <div class="facility-overlay">
-                <div class="facility-content">
-                    <h3>HOSPITAL</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+            <div class="facilities-col">
+                <div class="facility-bg" style="background-image: url('mediUni.png')"></div>
+                <div class="facility-overlay">
+                    <div class="facility-content">
+                        <h3>STRUKTURA MJEKËSORE</h3>
+                        <p>Projektim i spitaleve dhe klinikave sipas standardeve më të larta teknike.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="facilities-col">
-            <div class="facility-bg" style="background-image: url('RAILUX BUILDING LOGO.webp')"></div>
-            <div class="facility-overlay">
-                <div class="facility-content">
-                    <h3>THE STUDIO</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla.</p>
+            <div class="facilities-col">
+                <div class="facility-bg" style="background-image: url('RAILUX BUILDING LOGO.webp')"></div>
+                <div class="facility-overlay">
+                    <div class="facility-content">
+                        <h3>STUDIO ATZ</h3>
+                        <p>Zyra dhe hapësira komerciale që nxisin produktivitetin dhe inovacionin.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!---testimonials --->
 <section class="testimonials">
-    <h1>COMMENTS FROM OTHERS</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="testi-content">
+        <h1>ÇFARË THONË KLIENTËT</h1>
+        <p>Besimi i klientëve tanë është suksesi ynë më i madh.</p>
 
-    <div class="testimonial-row">
-        <div class="testimonial-col">
-            <img src="male.jpg" alt="Student 1">
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut.</p>
-                <h3>Christine Berkley</h3>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+        <div class="testimonial-row">
+            <div class="testimonial-col">
+                <img src="male.jpg" alt="Client 1">
+                <div>
+                    <p>"Railux transformoi shtëpinë tonë në një vepër arti. Saktësia në detaje dhe koha e dorëzimit ishin mbresëlënëse."</p>
+                    <h3>Arben Hoxha</h3>
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
             </div>
-        </div>
 
-        <div class="testimonial-col">
-            <img src="female.webp" alt="Student 2">
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet turpis nulla, eleifend faucibus est sollicitudin ut.</p>
-                <h3>David Byer</h3>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
+            <div class="testimonial-col">
+                <img src="female.webp" alt="Client 2">
+                <div>
+                    <p>"Profesionalizëm i lartë në dizajnin e brendshëm. Studioja kuptoi menjëherë vizionin tonë për klinikën e re."</p>
+                    <h3>Elena Dauti</h3>
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!--- Contact Section ---->
 <section class="contact" id="contact">
-    <h2 class="section-title">GET IN TOUCH</h2>
+    <h2 class="section-title">NA KONTAKTONI</h2>
     <div class="contact-form">
         <form>
             <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" required>
+                <label>Emri Juaj</label>
+                <input type="text" placeholder="Shkruani emrin..." required>
             </div>
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" required>
+                <label>Email</label>
+                <input type="email" placeholder="Email adresa..." required>
             </div>
             <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" required></textarea>
+                <label>Mesazhi</label>
+                <textarea placeholder="Si mund t'ju ndihmojmë?"></textarea>
             </div>
-            <button type="submit" class="submit-btn">SEND MESSAGE</button>
+            <button type="submit" class="submit-btn">DËRGO MESAZHIN</button>
         </form>
     </div>
 </section>
 
-<!-----call to action--->
 <section class="cta">
-    <h1> Enroll for our various online courses<br> anywhere from the WORLD </h1>
-    <a href="" class="hero-btn">CONTACT US</a>
+    <h1>GATI PËR TË NISUR PROJEKTIN TUAJ TË ARDHSHËM?</h1>
+    <a href="#contact" class="hero-btn">NA KONTAKTONI SOT</a>
 </section>
 
-<!-----footer--->
 <section class="footer">
-    <h4> ABOUT US </h4>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Ex voluptates sapiente ipsa natus est voluptate ut, soluta laborum non rem aperiam culpa neque,
-        <br> aliquid accusamus a iste? 
-        Unde, facilis maxime!</p>
+    <h4> RRETH NESH </h4>
+    <p>RAILUX Studio është një studio lider në arkitekturë dhe dizajn interior,<br> e dedikuar drejt krijimit të hapësirave inovative dhe të qëndrueshme.</p>
     <div class="icons">
-        <a href="https://www.instagram.com/railux.studio/?__pwa=1" target="_blank"><i class="fa fa-instagram"></i></a>
-        <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/railux.studio/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
     </div>
-    <p> RAILUX STUDIO </p>
-    <i class="fa fa-star"></i>
-    <i class="fa fa-star"></i>
-    <i class="fa fa-star"></i>
-    <i class="fa fa-star"></i>
-    <i class="fa fa-star"></i>
+    <p> RAILUX STUDIO ARCHITECTURE © 2026 </p>
 </section>
 
-<!---JavaScript for Toggle Menu --->
 <script>
 var navLinks = document.getElementById("navLinks");
-function showMenu() {
-    navLinks.style.right = "0";
-}
-function hideMenu() {
-    navLinks.style.right = "-200px";
-}
+function showMenu() { navLinks.style.right = "0"; }
+function hideMenu() { navLinks.style.right = "-200px"; }
 </script>
 
 </body>
